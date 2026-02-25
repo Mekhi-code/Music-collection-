@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1db954, #191414);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    width: 95%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.card {
+    background: #222;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="file"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1db954;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #17a44a;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider span {
+    background: #222;
+    padding: 0 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.spinner {
+    border: 4px solid #444;
+    border-top: 4px solid #1db954;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.error {
+    margin-top: 15px;
+    color: #ff4c4c;
+    text-align: center;
+}
