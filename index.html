@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist Artist Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎵 Playlist Artist Finder</h1>
+    <p class="subtitle">
+        Paste a playlist URL or upload a playlist image to discover the artist.
+    </p>
+
+    <div class="card">
+
+        <div class="input-group">
+            <label for="playlistUrl">Playlist URL</label>
+            <input type="text" id="playlistUrl" placeholder="Paste Spotify, YouTube Music, etc. link here">
+            <button id="analyzeUrlBtn">Analyze URL</button>
+        </div>
+
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <div class="input-group">
+            <label for="imageUpload">Upload Playlist Image</label>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="analyzeImageBtn">Analyze Image</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Analyzing playlist...</p>
+        </div>
+
+        <div id="result" class="result hidden">
+            <h2>Artist Found:</h2>
+            <p id="artistName"></p>
+            <p id="platformInfo"></p>
+        </div>
+
+        <div id="error" class="error hidden"></div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
